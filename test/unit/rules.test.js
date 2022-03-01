@@ -112,7 +112,7 @@ describe('before', () => {
 
   it('passes with old date string', async () => expect(await rules.before({ value: 'January, 2000' })).toBe(true))
 
-  it('fails with invalid value', async () => expect(await rules.after({ value: '' })).toBe(false))
+  it('fails with invalid value', async () => expect(await rules.before({ value: '' })).toBe(false))
 })
 
 /**
